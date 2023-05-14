@@ -1,48 +1,29 @@
 # NewCompicStore
-##
 # Первое - создание приложения.
-##
 ### Создать wpf(Майкрософт)
-##
 # Второе - Создать базу данных и таблицы в ней
-##
 ### Если в приложении используются картинки, то мы должны изменить им следующие свойства:
-##
 ### "Действия при сборке" - "Ресурс"
 ### "Копировать в выходной каталог" - "Копировать более новую версию"
-##
-##
 # Второе - nuget пакеты
 ##
 * Microsoft.EntityFrameworkCore
 * Microsoft.EntityFrameworkCore.Design
 * Microsoft.EntityFrameworkCore.SqlServer
 * Microsoft.EntityFrameworkCore.Tools
-##
 ### Далее мы должны создать подключение к бд
-##
 ### Что бы его осуществить, мы должны создать config-файл
-##
-##
 ###<add
 ###			name="LocalDBConnection"
 ###			connectionString="Server=(localdb)\mssqllocaldb;Database=NameDB;Trusted_Connection=True;"
 ###			providerName="System.Data.SqlClient"/>
 ##
-##
-# Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Database=NameOfDataBase;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
-#
-#
+### Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Database=NameOfDataBase;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 # LoginWindow
-##
-##
-## После мы должны подключить базу данных в коде для дальнейшего взаимодействия следующим образом:
-# 
+#### После мы должны подключить базу данных в коде для дальнейшего взаимодействия следующим образом:
 ## using(NameOfDBContext db = new NameOfDBContext())
-##
-## Если в приложении предусмотрена авторизация, то выполняем следующий запрос:
-##
-## название класса(наприемр User)
+### Если в приложении предусмотрена авторизация, то выполняем следующий запрос:
+### название класса(наприемр User)
 ##
 ## User user = db.Users.Where(u => u.Login == loginbox.Text && u.Password == passwordBox.Password).FirstOrDefault() as User;
 ##
