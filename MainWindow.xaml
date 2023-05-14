@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NewCompicStore"
         mc:Ignorable="d"
+        Loaded="Page_Loaded"
         Title="Главное меню"
         Height="750"
         Width="900"
@@ -78,13 +79,25 @@
 
             </Grid>
 
-            <Grid Grid.Row="1">
+            <!--<Grid Grid.Row="1">
                 <StackPanel>
                     <Grid Background="Lavender">
-                        <DataGrid Grid.Row="1" x:Name="ordersGrid" AutoGenerateColumns="True" IsReadOnly="True"/>
+                        --><!--<DataGrid  Grid.Row="1" x:Name="ordersGrid" AutoGenerateColumns="False" IsReadOnly="True"/>--><!--
+                        
                     </Grid>
                 </StackPanel>
-            </Grid>
+            </Grid>-->
+            <DataGrid Grid.Row="1" AutoGenerateColumns="False" x:Name="ordersGrid">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Имя" Width="*" Binding="{Binding NameClient}" />
+                    <DataGridTextColumn Header="Фамилия" Width="*" Binding="{Binding SurnameClient}"/>
+                    <DataGridTextColumn Header="Цена работы" Width="*" Binding="{Binding FinalPrice}"/>
+                    <DataGridTextColumn Header="Описание" Width="*" Binding="{Binding Description}"/>
+                    <DataGridTextColumn Header="Дата оформления" Width="*" Binding="{Binding DataOrder}"/>
+                    <DataGridTextColumn Header="Телефон" Width="*" Binding="{Binding PhoneNumber}"/>
+                    <DataGridTextColumn Header="Статус" Width="*" Binding="{Binding Status}"/>
+                </DataGrid.Columns>
+            </DataGrid>
 
 
             <Grid Background="#D4E6B5" Grid.Row="2">

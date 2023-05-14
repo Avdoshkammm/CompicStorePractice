@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 
 namespace NewCompicStore
 {
@@ -21,6 +22,13 @@ namespace NewCompicStore
                     MessageBox.Show($"Ты авторизовался под пользователем: {user.Surname} {user.Name} {user.Patronymic}");
                 }
 
+                //ordersGrid.ItemsSource = db.Orders.ToList();
+            }
+        }
+        public void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            using (KompicDbContext db = new KompicDbContext())
+            {
                 ordersGrid.ItemsSource = db.Orders.ToList();
             }
         }
@@ -57,26 +65,12 @@ namespace NewCompicStore
                    }
                    catch (Exception ex)
                    {
-                        //Console.WriteLine($"Ошибка: {ex.Message}");
-                            MessageBox.Show($"Ошибка: {ex.Message}");
-                     }
-                       db.SaveChanges();
+                        MessageBox.Show($"Ошибка: {ex.Message}");
+                   }
+                    db.SaveChanges();
                 }
             }
         }
-        //private void EditProduct_MouseDoubleClick(object sender, RoutedEventArgs e)
-        //{
-        //    //using (KompicDbContext db = new KompicDbContext())
-        //    //    if (db != null)
-        //    //    {
-        //    //        currentOrder = order;
-        //    //    }
-        //    if (sender is ListView listView && listView.SelectedItem != null)
-        //    {
-        //        Order o = listView.SelectedItem as Order;
-        //        new AddOrderWindow(o).ShowDialog();
-        //    }
-        //}
 
         private void сlearButton_Click(object sender, RoutedEventArgs e)
         {

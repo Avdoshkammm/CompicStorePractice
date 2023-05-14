@@ -79,6 +79,7 @@ namespace NewCompicStore
                     MessageBox.Show(ex.InnerException.ToString());
                 }
             }
+            this.Close();
         }
     }
 }
