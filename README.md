@@ -58,17 +58,18 @@
 #
 ### Теперь вернемся к 2-м типам вывода данных.
 #
-<Grid Background="Lavender">
+#<Grid Background="Lavender">
 <DataGrid Grid.Row="1" x:Name="ordersGrid" AutoGenerateColumns="True" IsReadOnly="True"/>
-</Grid>
+#</Grid>
 #
 # В данном случае показан пример вывода диспетчера задач. Что бы его использовать, не нужно в разметке указывать поля с бд
-#
-# ordersGrid.ItemsSource = db.Orders.ToList();
-#
+##
+№# ordersGrid.ItemsSource = db.Orders.ToList();
+##
 # Теперь по-подробнее о каждом элементе. 
 # ordersGrid - название 
 # ItemsSource - просто обозначение, что вот оно будет выводиться на экран в таком формате.
 # db - мы указывали когда использовали контекст базы данных
 #
 #
+# Теперь перейдём к окну добавления. В нём мы создаем несколько полей для ввода данных. 
