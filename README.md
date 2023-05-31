@@ -12,7 +12,7 @@
 * Microsoft.EntityFrameworkCore.Tools
 ##
 ### Далее мы должны создать подключение к бд
-### Что бы его осуществить, мы должны создать config-файл
+### Что бы его осуществить, мы должны создать config-файл. В нем мы должны указать в ковычках как в add свойство ###connectionString
 ###<connectionStrings>
 ###<add
 ###			name="LocalDBConnection"
