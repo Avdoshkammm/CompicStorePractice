@@ -11,6 +11,7 @@
 * Microsoft.EntityFrameworkCore.Design
 * Microsoft.EntityFrameworkCore.SqlServer
 * Microsoft.EntityFrameworkCore.Tools
+##
 ### Далее мы должны создать подключение к бд
 ### Что бы его осуществить, мы должны создать config-файл
 ###<connectionStrings>
