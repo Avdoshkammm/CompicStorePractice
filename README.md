@@ -14,11 +14,11 @@
 ### Далее мы должны создать подключение к бд
 ### Что бы его осуществить, мы должны создать config-файл. В нем мы должны указать в ковычках как в add свойство ###connectionString
 ###<connectionStrings>
-###<add
-###			name="LocalDBConnection"
-###			connectionString="Server=(localdb)\mssqllocaldb;Database=NameDB;Trusted_Connection=True;"
-###			providerName="System.Data.SqlClient"/>
-###</connectionStrings>
+<add
+		name="LocalDBConnection"
+		connectionString="Server=(localdb)\mssqllocaldb;Database=NameDB;Trusted_Connection=True;"
+		providerName="System.Data.SqlClient"/>
+</connectionStrings>
 ###
 ### Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Database=NameOfDataBase;Trusted_Connection=True;" ###Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
