@@ -20,7 +20,8 @@
 		providerName="System.Data.SqlClient"/>
 </connectionStrings>
 ###
-### Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Database=NameOfDataBase;Trusted_Connection=True;" ###Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+### Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Database=NameOfDataBase;Trusted_Connection=True;" 
+### Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 
 # LoginWindow
