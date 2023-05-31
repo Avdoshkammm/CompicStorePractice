@@ -40,21 +40,19 @@
 ##   main.Show();
 ##   this.Close();
 ## }
-#
 ### MainWindow 
-#
 ## Есть 2 способа вывода. Это или плитками, как в SportStore, или же списком как диспетчер задач. 
 ## Они отличаются тем, что в listviev можон добавлять картинки. А datagrid в своё время поле разбивается на колонки, названия которых указываются в названии столбцов БД
 #
-# Кстати, лучше использовать stackpanel. Вот её примерный код:
+## Кстати, лучше использовать stackpanel. Вот её примерный код:
 #
 #
-# <StackPanel
-#                        VerticalAlignment="Center"
-#                        HorizontalAlignment="Center"
-#                        Grid.Column="0">
-#
-# </StaclPanel>
+### <StackPanel
+###                        VerticalAlignment="Center"
+###                        HorizontalAlignment="Center"
+###                        Grid.Column="0">
+###
+### </StaclPanel>
 #
 # Что оно делает? Оно разбивает окно на своебразные полоски. Ими можно спамить до бесконечности, в пределах разумного
 #
