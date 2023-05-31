@@ -58,9 +58,9 @@
 #
 ### Теперь вернемся к 2-м типам вывода данных.
 #
-#					 <Grid Background="Lavender">
-#                        <DataGrid Grid.Row="1" x:Name="ordersGrid" AutoGenerateColumns="True" IsReadOnly="True"/>
-#                    </Grid>
+<Grid Background="Lavender">
+<DataGrid Grid.Row="1" x:Name="ordersGrid" AutoGenerateColumns="True" IsReadOnly="True"/>
+</Grid>
 #
 # В данном случае показан пример вывода диспетчера задач. Что бы его использовать, не нужно в разметке указывать поля с бд
 #
