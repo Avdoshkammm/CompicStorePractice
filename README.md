@@ -5,8 +5,7 @@
 ### Если в приложении используются картинки, то мы должны изменить им следующие свойства:
 ### "Действия при сборке" - "Ресурс"
 ### "Копировать в выходной каталог" - "Копировать более новую версию"
-# 3 - nuget пакеты
-##
+## 3 - nuget пакеты
 * Microsoft.EntityFrameworkCore
 * Microsoft.EntityFrameworkCore.Design
 * Microsoft.EntityFrameworkCore.SqlServer
