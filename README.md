@@ -21,8 +21,12 @@
 ###			providerName="System.Data.SqlClient"/>
 ###</connectionStrings>
 ###
-### Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Database=NameOfDataBase;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+### Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Database=NameOfDataBase;Trusted_Connection=True;" ###Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
 # LoginWindow
+
+
 #### После мы должны подключить базу данных в коде для дальнейшего взаимодействия следующим образом:
 ## using(NameOfDBContext db = new NameOfDBContext())
 ### Если в приложении предусмотрена авторизация, то выполняем следующий запрос:
