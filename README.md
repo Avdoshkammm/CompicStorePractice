@@ -19,7 +19,8 @@
 		connectionString="Server=(localdb)\mssqllocaldb;Database=NameDB;Trusted_Connection=True;"
 		providerName="System.Data.SqlClient"/>
 </connectionStrings>
-###
+
+
 ### Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Database=NameOfDataBase;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 
