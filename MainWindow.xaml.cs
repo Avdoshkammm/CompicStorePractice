@@ -91,7 +91,7 @@ namespace NewCompicStore
             {
                 var order = (ordersGrid.SelectedItem) as Order;
 
-                if (order != null)
+                if (order != shift)
                 {
 
                     if (MessageBox.Show($"Вы точно хотите удалить {order.NameClient}", "Внимание!",
